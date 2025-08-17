@@ -4,9 +4,9 @@
             <InputNumber :auto-width="true" style="min-width: 200px;" v-model="algorithm.total" size="large" placeholder="总数" suffix="张" min="0"/> 
         </FormItem>
         <!-- 自动计算 disabled -->
-        <!-- <FormItem label="特殊号数量" name="specialCount"> 
+        <FormItem label="特殊号数量" name="specialCount"> 
             <InputNumber :auto-width="true" style=" min-width: 200px;" v-model="algorithm.specialCount" size="large" placeholder="特殊卡数量" suffix="张" min="0" :max="algorithm.total"/> 
-        </FormItem> -->
+        </FormItem>
         <FormItem label="列数" name="column">
             <InputNumber :auto-width="true" style=" min-width: 200px;" v-model="algorithm.column" size="large" placeholder="列数" suffix="列" min="0"/> 
         </FormItem>
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { Form, FormItem, Input, InputNumber, Button, type SubmitContext, type FormProps, type InputNumberValue, type ChangeContext } from 'tdesign-vue-next';
+import { Form, FormItem, Input, InputNumber, Button, type SubmitContext } from 'tdesign-vue-next';
 import type { Algorithm } from '~/types/algorithm';
 
 defineProps<{

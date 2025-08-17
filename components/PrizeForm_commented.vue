@@ -42,10 +42,10 @@
       <div class="flex flex-col gap-2">
         <!-- 描述列表组件，展示产品的基本信息，4列布局 -->
         <Descriptions bordered :column="4">
-        <DescriptionsItem label="总数">{{ props.algorithm.total }}</DescriptionsItem>
-        <DescriptionsItem label="特殊数量">{{ props.algorithm.specialCount }}</DescriptionsItem>
-        <DescriptionsItem label="列数">{{ props.algorithm.column }}</DescriptionsItem>
-        <DescriptionsItem label="流水号">{{ props.algorithm.serialPrefix }}</DescriptionsItem>
+          <DescriptionsItem label="总数">{{ props.algorithm.total }}</DescriptionsItem>
+          <DescriptionsItem label="特殊数量">{{ props.algorithm.specialCount }}</DescriptionsItem>
+          <DescriptionsItem label="列数">{{ props.algorithm.column }}</DescriptionsItem>
+          <DescriptionsItem label="流水号">{{ props.algorithm.serialPrefix }}</DescriptionsItem>
         </Descriptions> 
       </div>
       
@@ -128,7 +128,7 @@ const props = defineProps<{
 
 // 控制编辑奖符弹窗的显示状态
 const showEditPrizeModal = ref(false)
-
+ 
 // 表格行样式函数
 const getItemRowClassName: TableProps['rowClassName'] = (row: TableRowData) => {
   let className = ''

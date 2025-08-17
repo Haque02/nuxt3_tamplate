@@ -1,5 +1,4 @@
 import type { Arrangement, Algorithm, Item } from "~/types/algorithm"
-import beta from '@stdlib/random/base/beta'
 
 // reverse
 const reverseMatrixAndconvertToCsvAndDownload = (matrix: Array<Array<any>>, filename: string) => {
