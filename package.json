@@ -12,6 +12,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
+    "@stdlib/random-base-beta": "^0.2.1",
     "@stdlib/stdlib": "^0.3.2",
     "nuxt": "^3.14.1592",
     "vue": "latest",

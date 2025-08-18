@@ -1,4 +1,4 @@
-import beta from '@stdlib/random/base/beta'
+import beta from '@stdlib/random-base-beta'
 
 function betaPdf(x: number, alpha: number, beta: number) {
     if (x < 0 || x > 1) return 0;
@@ -13,7 +13,7 @@ function betaCdf(x: number, alpha: number, beta: number) {
     const dx = x / n;
     for (let i = 0; i < n; i++) {
         const xi = i * dx;
-        sum += Math.pow(xi, alpha - 1) * Math.pow(1 - xi, beta - 1) * dx;
+      sum += Math.pow(xi, alpha - 1) * Math.pow(1 - xi, beta - 1) * dx;
     }
     return sum / betaFunction(alpha, beta); // 归一化
 }
